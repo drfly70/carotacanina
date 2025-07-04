@@ -1,0 +1,287 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Fredoka One', 'Cinzel', Arial, sans-serif;
+  background: linear-gradient(135deg, #fffbe0 0%, #fbeee6 100%);
+  color: #3a2600;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  border-bottom: 4px solid #b8860b;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+}
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #b8860b;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.roman-icon {
+  font-size: 1.3em;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #8b4513;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.navbar ul li a:hover {
+  color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+  background: radial-gradient(circle at 60% 40%, #ffd700 0%, #fbeee6 100%);
+  padding: 5rem 0 3rem 0;
+  text-align: center;
+  position: relative;
+}
+.hero-badge {
+  background: #b8860b;
+  color: #fffbe0;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #b8860b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.hero-highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #e67e22;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.latin {
+  font-family: 'Cinzel', serif;
+  font-style: italic;
+  color: #8b4513;
+  font-size: 1.1rem;
+}
+.hero-description {
+  margin-bottom: 2rem;
+}
+.mint-btn {
+  background: linear-gradient(90deg, #ffb347 0%, #ffd700 100%);
+  color: #8b4513;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 10px #ffd70055;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.mint-btn:hover {
+  background: #ffb347;
+  color: #fff;
+}
+.carrot-icon {
+  font-size: 1.2em;
+}
+#fomo-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #e67e22;
+  font-weight: bold;
+  min-height: 1.5em;
+}
+.hero-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700 0%, #b8860b 100%);
+  margin: 2rem auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+/* Section Headings & Dividers */
+.section-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700 0%, #b8860b 100%);
+  margin: 2rem auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+/* About, Tokenomics, Roadmap, How to Buy, Community */
+.about, .tokenomics, .roadmap, .howtobuy, .join {
+  background: #fbeee6;
+  padding: 3rem 0;
+  text-align: center;
+}
+.tokenomics ul, .howtobuy ol, .roadmap ol, .join ul {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 2rem auto 0 auto;
+  padding: 0 1.5rem;
+}
+.tokenomics li, .howtobuy li, .roadmap li, .join li {
+  margin-bottom: 1.1rem;
+  font-family: 'Fredoka One', cursive;
+}
+.token-chart {
+  margin: 2rem auto 0 auto;
+  width: 220px;
+  height: 220px;
+  background: conic-gradient(
+    #ffd700 0% 42%,
+    #f4a460 42% 72%,
+    #e67e22 72% 92%,
+    #b8860b 92% 100%
+  );
+  border-radius: 50%;
+  border: 6px solid #b8860b;
+}
+
+/* Gallery */
+.gallery {
+  background: #fffbe0;
+  padding: 3rem 0;
+  text-align: center;
+}
+.gallery-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.gallery-item {
+  background: #fff;
+  border: 3px solid #ffd700;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #ffd70022;
+  width: 280px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.gallery-item:hover {
+  box-shadow: 0 4px 24px #ffd70055;
+  transform: translateY(-4px) scale(1.03);
+}
+.gallery-item img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 240px;
+  margin-bottom: 1rem;
+}
+.gallery-item span {
+  color: #b8860b;
+  font-size: 1.1rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+/* Socials */
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.socials a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #e67e22;
+  background: #fffbe0;
+  padding: 0.7rem 1.5rem;
+  border-radius: 24px;
+  border: 2px solid #ffd700;
+  transition: background 0.2s, color 0.2s;
+}
+.socials a:hover {
+  background: #ffd700;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #ffd700;
+  color: #8b4513;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  border-top: 4px solid #b8860b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    gap: 1rem;
+  }
+}.sol-price-ticker {
+  display: inline-flex;
+  align-items: center;
+  background: #fffbe0;
+  border: 2px solid #ffd700;
+  border-radius: 18px;
+  padding: 0.5em 1.2em;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #b8860b;
+  margin: 1em 0;
+  gap: 0.5em;
+}
+.sol-label {
+  font-weight: bold;
+  color: #e67e22;
+}
+#sol-price {
+  font-family: 'Fredoka One', cursive;
+  color: #3a2600;
+}
+
